@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realiza tu pedido en Café Aroma.">
+    <title>Café Aroma | Pedidos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo"> Café Aroma</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="pedidos.html" class="activo">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pedidos-principal">
+
+        <h2>Realiza tu pedido</h2>
+        <p class="descripcion">
+            Selecciona tus productos favoritos y disfruta de Café Aroma.
+        </p>
+
+        <section class="carrito">
+            <h3>Tu pedido</h3>
+
+            <div id="lista-pedido" aria-live="polite">
+                <!-- Los productos aparecerán aquí -->
+            </div>
+
+            <h3 class="total">
+                Total a pagar: $<span id="total">0.00</span>
+            </h3>
+        </section>
+
+        <section class="formulario-pedido">
+
+            <h3>Datos del cliente</h3>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre completo:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    minlength="3"
+                    required
+                >
+
+                <label for="telefono">Teléfono:</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ejemplo: 0991234567"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+
+                <label for="direccion">Dirección:</label>
+                <textarea
+                    id="direccion"
+                    name="direccion"
+                    placeholder="Escribe tu dirección"
+                    required
+                ></textarea>
+
+                <button type="submit" class="boton-confirmar">
+                    Confirmar pedido
+                </button>
+
+            </form>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+
+</body>
+</html>

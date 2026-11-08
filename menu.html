@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce nuestros cafés, bebidas y postres.">
+    <title>Café Aroma | Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">☕ Café Aroma</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="activo">Menú</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-principal">
+
+        <h2>Nuestro Menú</h2>
+        <p class="descripcion">
+            Disfruta de nuestros deliciosos productos.
+        </p>
+
+        <div class="productos">
+
+            <article class="producto">
+                <img src="imagenes/americano.jpg" alt="Taza de café americano">
+                <h3>Café Americano</h3>
+                <p>Café tradicional con un sabor intenso.</p>
+                <span>$1.50</span>
+                <button type="button" onclick="agregarProducto('Café Americano', 1.50)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/capuchino.jpg" alt="Taza de capuchino">
+                <h3>Capuchino</h3>
+                <p>Café con leche cremosa y espuma.</p>
+                <span>$2.00</span>
+                <button type="button" onclick="agregarProducto('Capuchino', 2.00)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/mocaccino.jpg" alt="Taza de mocaccino">
+                <h3>Mocaccino</h3>
+                <p>Una deliciosa mezcla de café y chocolate.</p>
+                <span>$2.50</span>
+                <button type="button" onclick="agregarProducto('Mocaccino', 2.50)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/frappe.jpg" alt="Vaso de frappé">
+                <h3>Frappé</h3>
+                <p>Bebida fría y cremosa de café.</p>
+                <span>$2.50</span>
+                <button type="button" onclick="agregarProducto('Frappé', 2.50)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/pastel.jpg" alt="Porción de pastel de chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>Suave pastel con delicioso chocolate.</p>
+                <span>$2.00</span>
+                <button type="button" onclick="agregarProducto('Pastel de Chocolate', 2.00)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/croissant.jpg" alt="Croissant recién horneado">
+                <h3>Croissant</h3>
+                <p>Pan de hojaldre dorado y crujiente.</p>
+                <span>$1.50</span>
+                <button type="button" onclick="agregarProducto('Croissant', 1.50)">
+                    Agregar al pedido
+                </button>
+            </article>
+
+        </div>
+
+        <div class="ver-pedido">
+            <a href="pedidos.html" class="boton">Realizar mi pedido</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+
+</body>
+</html>
